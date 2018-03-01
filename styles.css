@@ -1,0 +1,70 @@
+body {
+    font-size: 16px;
+    padding: 20px 100px 0px 100px;
+    background: #f3f3f3;
+    background-color: whitesmoke;
+}
+
+button {
+    font-size: 1em;
+}
+
+textarea {
+    width: 100%;
+    max-width: 500px;
+    height: 100px;
+}
+
+div{
+	padding: 5%;
+	margin: 2.5%;
+}
+
+#app {
+ display: flex;
+
+
+
+}
+
+#main {
+	flex: 70%;
+	background-color: lightgray;
+
+}
+
+#info{
+	flex: 30%;
+	background-color: ghostwhite;
+
+
+}
+#status{
+	font-weight: bold;
+	
+
+}
+#story{
+	font-size: large;
+
+
+}
+
+button{
+	
+    text-decoration: none;
+    color: initial;
+    padding:10px;
+   
+   text-align: center;
+	width: 50%;
+	margin: 10px;
+
+
+
+
+}
+#footer{
+	text-align: center;
+}
+

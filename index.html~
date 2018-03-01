@@ -1,0 +1,73 @@
+<html>
+  <head>
+  	 <link rel="stylesheet" href="styles.css"/>
+    <title>Choose Your Own Adventure</title>
+    <style></style>
+  </head>
+  <body>
+    	  <h1>Futile Adventures</h1>
+  	<div id="app">
+
+  		<div id="main">
+
+  	
+  			<div id="story">
+  				<p>{{story}}</p>
+  			</div>
+  			
+  			<div id="buttons" v-if="resume">
+  			
+  		  		<button v-on:click="resumeAdventure">Continue</button>
+  
+  			</div>
+  			<div id="buttons" v-else>
+  			
+  				<button v-on:click="firstChoice">{{firstOption}}</button>
+  				<button v-on:click="secondChoice">{{secondOption}}</button>
+  				<button v-on:click="thirdChoice">{{thirdOption}}</button>
+  				
+  			</div>
+  		</div>
+  	
+  	<div id="info">
+  		<div id="status" v-if="health >= 50">
+  			<p>You feel great.</p>
+  		
+  		</div>
+  		<div id="status" v-else-if="health > 0 && health < 50">
+  			<p>You feel like someone knifed you in the kidneys</p>
+  		
+  		</div> 
+  		<div id="status" v-else>
+  			<p>You are definitely dead, and yet by some miracle you press on</p>
+  		
+  		</div>
+  		
+  		<div id="achievements">
+  			<p>Achievement Unlocked: </p>
+  			<strong><p>{{achievement}}</p></strong>
+  		
+  		</div>
+  		
+  		<div id="gold">
+  			<p>You have <strong>{{gold}}</strong> pieces of gold.</p>
+  		</div>
+  		
+  		
+  		
+  		
+  	</div>
+  		
+  	
+  	
+  	</div>
+ 
+ <div id="footer">
+ 	<a href="https://github.com/tmabey2/Creative-3">Link to Github</a>
+ </div>
+ 
+ 	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+   <script src="script.js"></script>
+   
+  </body>
+</html>
